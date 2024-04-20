@@ -5,6 +5,7 @@ import NavbarComp from './components/navbar';
 import Footer from './components/footer';
 import ServicesSection from './components/servicios';
 import ProductSection from './components/productos';
+import ContactForm from './components/contacto';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <NavbarComp/>
       <ServicesSection/>
       <ProductSection/>
+      <ContactForm/>
       <Footer/>
     </>
   )

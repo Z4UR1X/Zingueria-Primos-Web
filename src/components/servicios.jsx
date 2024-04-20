@@ -33,9 +33,11 @@ const ServicesSection = () => {
 
   return (
     <section id="ServicesSection">
-      <img id="ServicesTitleImg" src={ServicesTitleImg} alt="Imagen Principal" />
-      <h1 className="image-title h1X text-slide-right">Descubre nuestros servicios</h1>
-      <h2 className="image-subtitle h1X text-slide-left">Especializados en Zinguería</h2>
+        <img id="ServicesTitleImg" src={ServicesTitleImg} alt="Imagen Principal" />
+        <div className="title-text-cont">
+          <h1 className="image-title h1-left text-slide-right">Descubre nuestros servicios</h1>
+          <h2 className="image-subtitle h1-left text-slide-left">Especializados en Zinguería</h2>
+        </div>
       <div className="album-container slide-to-top">
         {[...Array(6).keys()].map((index) => (
           <div key={index} className="album-item">
