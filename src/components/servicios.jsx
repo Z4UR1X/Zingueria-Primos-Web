@@ -1,5 +1,6 @@
 /* import { Container, Image } from 'react-bootstrap'; */ /* <-- ACTIVAR DE SER NECESARIO */
 import { useState } from "react";
+import { Transition } from 'react-transition-group';
 import ServicesTitleImg from "../assets/ServicesTitle-img.png";
 
 /* -- Importación de imágenes para cada Route -- */
@@ -57,7 +58,11 @@ const ServicesSection = () => {
                 onMouseLeave={() => setHoveredIndex(null)}
               />
             </div>
-            <div className="image-text">{hoveredIndex === index ? imgDescriptions[index] : imgTitles[index] }</div>
+            <Transition in={index !== null} timeout={300}>
+              {state => (
+                <h3 className={`image-text ${state}`}>{hoveredIndex == index ? imgDescriptions[index] : imgTitles[index]}</h3>
+              )}
+            </Transition>
           </div>
         ))}
       </div>
