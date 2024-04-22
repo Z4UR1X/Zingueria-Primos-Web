@@ -1,8 +1,27 @@
-# React + Vite
+# Zinguería Primos
+¡Bienvenido/a a Zinguería Primos!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto web desarrollado para la Zinguería Primos, donde podrás conocer nuestros servicios, explorar nuestros productos y ponerte en contacto con nosotros de manera rápida y sencilla.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
+Este proyecto ha sido construido utilizando React-Bootstrap, una biblioteca de componentes front-end que facilita el desarrollo de interfaces de usuario receptivas y estilizadas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Secciones:
+Inicio
+En la sección de Inicio, encontrarás una breve introducción a nuestra empresa y lo que ofrecemos. ¡Te invitamos a explorar más!
+
+### Servicios
+Descubre los servicios que ofrecemos en Zinguería Primos. Desde instalación y reparación de canalones hasta fabricación de piezas a medida, estamos aquí para satisfacer tus necesidades.
+
+### Productos
+Echa un vistazo a nuestra selección de productos de alta calidad. Desde canalones hasta accesorios para tejados, tenemos todo lo que necesitas para tus proyectos de zinguería.
+
+### Contacto
+¿Tienes alguna pregunta o consulta? ¡No dudes en ponerte en contacto con nosotros! Completa el formulario de contacto y nos pondremos en contacto contigo lo antes posible.
+
+### ¿Cómo Ejecutar el Proyecto?
+Clona este repositorio en tu máquina local.
+Instala las dependencias utilizando npm install.
+Ejecuta el proyecto con npm start.
+Abre tu navegador y navega a http://localhost:3000 para ver el sitio web.
+¡Esperamos que disfrutes explorando Zinguería Primos!
