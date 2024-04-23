@@ -23,6 +23,6 @@ Echa un vistazo a nuestra selección de productos de alta calidad. Desde canalon
 ### ¿Cómo Ejecutar el Proyecto?
 <strong>1. </strong>Clona este repositorio en tu máquina local.<br/>
 <strong>2. </strong>Instala las dependencias utilizando npm install.<br/>
-<strong>3. </strong>Ejecuta el proyecto con <code>npm start</code>. Alternativamente puedes ejecutarlo con <code><strong>npm </strong>run dev</code>.<br/>
+<strong>3. </strong>Ejecuta el proyecto con <code><strong>npm start</strong></code>. Alternativamente puedes ejecutarlo con <code><strong>npm run dev</strong></code>.<br/>
 <strong>4. </strong>Abre tu navegador y navega a http://localhost:3000 o el puerto que indique la consola para ver el sitio web.<br/>
 ¡Esperamos que disfrutes explorando Zinguería Primito!
