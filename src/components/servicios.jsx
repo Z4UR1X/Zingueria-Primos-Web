@@ -36,8 +36,8 @@ const ServicesSection = () => {
     <section id="ServicesSection">
         <img id="ServicesTitleImg" src={ServicesTitleImg} alt="Imagen Principal" />
         <div className="title-text-cont">
-          <h1 className="image-title h1-left text-slide-right">Descubre nuestros servicios</h1>
-          <h2 className="image-subtitle h1-left text-slide-left">Especializados en Zinguería</h2>
+          <h1 className="text-slide-right">Descubre nuestros servicios</h1>
+          <h2 className="text-slide-left">Especializados en Zinguería</h2>
         </div>
       <div className="album-container slide-to-top">
         {[...Array(6).keys()].map((index) => (
@@ -60,7 +60,7 @@ const ServicesSection = () => {
             </div>
             <Transition in={index !== null} timeout={300}>
               {state => (
-                <h3 className={`image-text ${state}`}>{hoveredIndex == index ? imgDescriptions[index] : imgTitles[index]}</h3>
+                <h3 className={`image-text ${state}`}>{hoveredIndex === index ? <span >{imgDescriptions[index]}</span> : imgTitles[index]}</h3>
               )}
             </Transition>
           </div>

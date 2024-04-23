@@ -127,7 +127,7 @@ body {
   .nav-link {
     display: flex;
     background-color: transparent !important; 
-    height: 5vh !important;
+    height: 16vh !important;
     width: fit-content;
     justify-content: center;
     align-items: center;
@@ -136,14 +136,16 @@ body {
     font-size: 1.2em;
     color: #000000;
     transition: 
-      text-shadow 0.5s ease, 
+      text-shadow 0.5s ease-in-out, 
       color 0.5s ease, 
-      margin 0.3s ease;
+      margin 0.2s ease-in-out;
   }
 
     .nav-link:hover {
       margin: -5px 0;
-      text-shadow: 1px 1px 25px #4f5bff !important;
+      background: linear-gradient(#000000, transparent) !important;
+      color: #dedede !important;
+      text-shadow: 0px 2px 3px black;
     }
       
     .nav-link.gradientEffect {
@@ -169,31 +171,19 @@ body {
   #ProductTitleImg {
     object-fit: cover;
     width: 100vw;
-    height: 30vh;
+    height: 35vh;
     box-shadow: 0 5px 45px 25px rgba(0, 0, 0, 0.75) !important;
     z-index: 0;
   }
 
   .title-text-cont {
     position: relative;
-    bottom: 20vh;
+    bottom: 24vh;
     left: 5vw;
     color: white;
     font-style: italic;
     text-shadow: 0 0 5px black;
   }
-
-    .image-title {
-      top: 25%;
-    }
-
-    .image-subtitle {
-      top: calc(25% + 8%);
-    }
-
-    .product-title {
-      top: 25%;
-    }
 
   .album-container {
     display: flex;
@@ -205,7 +195,7 @@ body {
   .album-item {
     width: 25vw;
     height: 65vh;
-    margin: 25px;
+    margin: 20px;
     overflow: hidden;
   }
 

@@ -18,7 +18,7 @@ const ProductSection = () => {
     { id: 6, name: 'Zingueria Canaleta Conversa Techo', description: '', price: 22430, imageUrl: productImg2},
     { id: 7, name: 'Babeta L Cierre Lateral Chapa Galvanizada', description: '', price: 15550, imageUrl: productImg3},
     { id: 8, name: 'Canaleta Media Caña Galvanizada', description: '', price: 12300, imageUrl: productImg4},
-    { id: 9, name: 'Zingueria Canaleta Conversa Techo', description: '', price: 'QuéMirásBobo', imageUrl: productImg1},
+    { id: 9, name: 'Zingueria Canaleta Conversa Techo', description: '', price: 45000, imageUrl: productImg1},
   ];
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -35,17 +35,21 @@ const ProductSection = () => {
     setSearchTerm(event.target.value);
   };
 
+  const handleProductClick = productId => {
+    const clickedProduct = products.find(product => product.id === productId);
+    setFilteredProducts([clickedProduct]);
+  };
+
   return (
     <section id='ProductSection'>
       <img id="ProductTitleImg" src={ProductTitleImg} alt="Imagen de la sección productos"/>
         <div className='title-text-cont'>
-          <h1 className="product-title text-slide-right">Productos de excelente calidad</h1>
-          <h2 className="product-subtitle text-slide-left">Construye con confianza</h2>
+          <h1 className="text-slide-right">Productos de excelente calidad</h1>
+          <h2 className="text-slide-left">Construye con confianza</h2>
          </div>
       <Container>
-        <Row>
-          <Col>
-            <div className="mb-3">
+        <Row style={{marginBottom: '25px'}}>
+            <Col>
               <FormControl
                 placeholder="Buscar productos..."
                 aria-label="Buscar productos"
@@ -53,18 +57,23 @@ const ProductSection = () => {
                 value={searchTerm}
                 onChange={handleChange}
               />
-              <div>
-                <Button variant="outline-secondary" onClick={handleSearch}>Buscar</Button>
-              </div>
-            </div>
-          </Col>
+            </Col>
+            <Col>
+              <Button variant="outline-secondary" onClick={handleSearch}>Buscar</Button>
+            </Col>
         </Row>
         <Row>
           <Card style={{width: '25vw', height: 'fit-content'}} id='products-col-list'>
           <Card.Title style={{textAlign: 'center', padding: '10px'}}>PRODUCTOS</Card.Title>
             <div id='custom-list'>
               {filteredProducts.map(product => (
-                <a style={{width: '100%', padding: '10px 0 10px 10px', display: 'block'}} key={product.id}>{product.name}</a>
+                <a 
+                  key={product.id} 
+                  style={{width: '100%', padding: '10px 0 10px 10px', display: 'block'}}
+                  onClick={() => handleProductClick(product.id)} // Agregar el controlador de eventos onClick
+                >
+                  {product.name}
+                </a>
               ))}
             </div>
           </Card>

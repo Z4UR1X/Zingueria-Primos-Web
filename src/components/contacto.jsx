@@ -49,7 +49,7 @@ const ContactForm = () => {
             aria-hidden="false"
             tabIndex="0"
           ></iframe>
-          <Card className='transparent-background' style={{ height: '50%' }}>
+          <Card className='transparent-background' style={{ height: '40%', marginTop: '20px' }}>
             <Card.Body>
               <Card.Title>Información de Contacto</Card.Title>
               <Card.Text>
